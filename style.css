@@ -1,0 +1,56 @@
+@font-face {
+    font-family: roboto;
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    height: 100vh;
+    background-color: #265cc5;
+}
+
+#column1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    align-self: center;
+}
+
+figcaption{
+    background: #1437bf;
+    font-family: roboto;
+    font-size:large;
+    text-align: center;
+    padding: 7px;
+    margin: 0;
+    color: white;
+}
+
+#column2{
+    flex-basis: 70%;
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/images/PEP_BWP_D.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.tagline{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.tagline-image{
+    height: 160px;
+    width: 500px;
+}
+
+.col-1-picture{
+    vertical-align: middle;
+}
