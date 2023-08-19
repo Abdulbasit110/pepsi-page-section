@@ -1,0 +1,410 @@
+@font-face {
+    font-family: roboto;
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+/* @font-face {
+    font-family: sans;
+    src: url(./assets/fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: roboto-light;
+    src: url(./assets/fonts/Roboto_Mono/static/RobotoMono-Light.ttf);
+} */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: #0065c3 */
+}
+ /* ---------------------  navigation bar ------------------- */
+
+ nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+ }                                         
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    background-color: #0065c3;
+    margin: 0;
+    /* padding: 15px; */
+    justify-content: flex-start;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-family: roboto;
+    font-size: 13.5px;
+    /* padding: 20px; */
+    margin: 0;
+    letter-spacing: .5px;
+}
+nav  li:not(#buy,.logo-image){
+    padding:  15px 20px;
+    margin: 0 5px;
+}
+#buy{
+    border:2px solid white;
+    border-radius: 15px;
+    padding: 5px 22px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 36px;
+}
+.logo-image{
+    padding:15px 35px 15px 0;
+}
+nav i{
+    margin-left: 10px;
+}
+/* #buy:hover{
+    background-color: white;
+    color:#0065c3 ;
+} */
+
+/* -------------------------------------------------------------------- */
+                                /* -------------------------------section 01--------------------------------- */
+.section1-parent {
+    background-image: url(./assets/images/background.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* overflow: hidden; */
+    font-family: roboto;
+    display: flex;
+    justify-content: center; 
+}
+.secition1-left{
+    flex-basis: 40%;;
+    background-image: url(./assets/images/pzs-can-old@2x.png);
+    background-repeat: no-repeat;
+    /* background-position: left bottom; */
+    background-position-x: 40%; 
+    background-size: cover;
+    /* background-position-y: 50%; */
+    margin-top: 50px;
+    background-size: 150% 100%;
+}
+.section1-right{
+    flex-basis: 60%;
+    background-image: url(./assets/images/svgexport-1\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    background-size: 60% auto;
+}
+.get-link{
+    /* align-self: flex-end; */
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}          
+/* -------------------------------------------------------------------- */
+
+
+/* <!-- -------------------------------section 02----------------------    --> */
+
+.section2-container{
+    background-color: #000;
+    height: 105vh;
+    width: 100%;
+    display: flex;
+    font-family: roboto;
+    text-align: center;
+}
+.section2-left{
+    flex-basis: 60%;
+    background-image:  url(./assets/images/pzs-can-nobug-desktop.png) ;
+    background-repeat: no-repeat;
+    background-position: right -76px bottom;
+    background-size: auto 115%;
+    position: relative;
+    padding-top: 18px;
+}
+
+.section2-right{
+    flex-basis: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.video-images{
+    display: flex;
+    color: white;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+/* <!-- -------------------------------section 03----------------------    --> */
+
+.section3-container{
+    height: 110vh;
+    background-image: url(./assets/images/Desktop_Background.png);
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: roboto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section3-child{
+    display: flex;
+}
+.section3-image{
+    flex-basis: 50%;
+    margin-top: 60px;
+    text-align: center;
+}
+#section3-right-image{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    margin-left: 20px;
+    /* margin-top: 70px; */
+    justify-content: center;
+    align-items: center;
+}
+.learn-more{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 18px;
+    padding: 7px 20px;
+    cursor: pointer;
+    
+}
+/* .section3-left{
+    width: 50%;
+}
+.section3-righ{
+    width: 50%;
+} */
+
+/* -------------------------------------------------------------------- */
+/* <!-- -------------------------------section 04----------------------    --> */
+
+.flex-container{
+    display: flex;
+    height: 100vh;
+    background-color: #265cc5;
+}
+
+
+#column1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    align-self: center;
+}
+
+.col-1-items figcaption{
+    background: #1437bf;
+    font-family: roboto;
+    /* font-size:large; */
+    text-align: center;
+    padding: 7px;
+    margin: 0;
+    color: white;
+}
+
+#column2{
+    flex-basis: 80%;
+    /* height: 100%;
+    width: 100%; */
+    background-image: url(./assets/images/PEP_BWP_D.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+.tagline{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.tagline-image{
+    height: 160px;
+    width: 500px;
+}
+
+.col-1-picture{
+    vertical-align: middle;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* <!-- -------------------------------section 05----------------------    --> */
+.section5-container{
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    background-image: url(./assets/images/bg-2-desktop@2x.png);
+    background-position: left bottom;
+    background-size: cover;
+    justify-content: space-between;
+    background-color: #034c91;
+}
+#section5-child1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+    justify-content: space-between;
+}
+#section5-child2{
+    /* flex-basis: 65%; */
+    object-fit: cover;
+    z-index: 1;
+    /* display: inline-block;
+    margin-left: auto; */
+}
+
+/* -------------------------------------------------------------------- */
+/* <!-- -------------------------------section 06----------------------    --> */
+
+.sectioin6-container{
+    height: 120vh;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+/* -------------------------------------------------------------------- */
+/* <!-- -------------------------------section 07----------------------    --> */
+
+.section6-container{
+    display: flex;
+    height: 115vh;
+    width: 100%;
+    background-image: url(./assets/images/twil-bg.jpg);
+    overflow: hidden;
+    justify-content: space-around;
+}
+/* .section7-image{
+    /* flex-basis: 50%;} */
+
+#section7-image2{
+    align-self: center;
+    flex-shrink: 30%;
+}
+#section7-image1{
+    padding: 70px;
+    flex-shrink: 70%;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* <!-- -------------------------------section 08----------------------    --> */
+
+.section8-container{
+height: 85vh;
+width: 100%;
+display: flex;
+background-image: url(./assets/images/04_Generation_BG_D_2.png);
+align-items: center;
+background-repeat: no-repeat;
+background-size: cover;
+/* justify-content: space-around; */
+/* justify-content: space-around; */
+color: white;
+/* font-family: roboto; */
+/* font-weight: 900; */
+justify-content: center;
+}
+/* 
+.section8-images{
+    flex-basis: 50%;
+} */
+#section8-left{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    /* justify-content: flex-start; */
+    padding: 0 100px 0 150px;
+    
+}
+#section8-right{
+    /* background-image: url(./assets/images/04_Generation_BG_M_2_EY.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+    /* background-image: url(assets/images/promotion1-hero_v3.png); */
+    filter: drop-shadow(1rem 1rem 1.5rem rgba(0, 0, 0, .5));
+}
+/* -------------------------------------------------------------------- */
+
+/* <!-- -------------------------------section 09----------------------    --> */
+.section9-container{
+    height: 47.7vh;
+    display: flex;
+    flex-direction: column;
+    /* -ms-flex-pack: distribute; */
+    justify-content: space-around;
+    color: #0065c3;
+    /* align-items: center; */
+}
+.section9-text{
+    /* margin: auto; */
+    text-align: center;
+    /* font-family: roboto; */
+}
+/* .section9-image-child{
+    flex-basis: 10%;
+} */
+.section9-images{
+    display:flex;
+    justify-content:center;
+}
+.section9-image{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+}
+/* .section9-images div i{
+    color: #ffffff;position:absolute;left: 8px;bottom:30px;
+} */
+
+/* -------------------------------------------------------------------- */
+
+/* --------------------------------footer.section--------------------------- */
+
+.footer{
+    display: flex;
+    height: 50vh;
+    justify-content: space-around;
+    color: white;
+    font-family:  Cervo Neue Black, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: #0065c3;
+    align-items: center;
+}
+.footer-links{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    line-height: .25;
+}
+
+footer ul{
+    list-style-type: none;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
