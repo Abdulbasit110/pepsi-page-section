@@ -424,7 +424,7 @@ justify-content: center;
 
 }
 .section9-image:hover{
-    transform: rotate(5deg);
+    transform: rotate(5deg) scale(1.1);
     filter: brightness(0.75);
     /* transform: skew(10deg); */
     /* overflow: hidden; */
