@@ -53,6 +53,7 @@ nav  li:not(#buy,.logo-image){
     display: inline-block;
     margin-left: auto;
     margin-right: 36px;
+    
 }
 .logo-image{
     padding:15px 35px 15px 0;
@@ -60,10 +61,24 @@ nav  li:not(#buy,.logo-image){
 nav i{
     margin-left: 10px;
 }
-/* #buy:hover{
+nav img{
+    transition: 300ms linear all;
+}
+nav img:hover{
+   transform: rotate(90deg);
+}
+#buy:hover{
     background-color: white;
+    /* transition: 1s; */
+    /* color:#0065c3 ; */
+}
+    
+
+#buy:hover a{
     color:#0065c3 ;
-} */
+    background-color: white;
+    transition: 1s;
+}
 
 /* -------------------------------------------------------------------- */
                                 /* -------------------------------section 01--------------------------------- */
@@ -286,7 +301,7 @@ nav i{
 /* -------------------------------------------------------------------- */
 /* <!-- -------------------------------section 07----------------------    --> */
 
-.section6-container{
+.section7-container{
     display: flex;
     height: 115vh;
     width: 100%;
@@ -299,13 +314,42 @@ nav i{
 
 #section7-image2{
     align-self: center;
+    animation: animate-r 1.5s;
     flex-shrink: 30%;
 }
 #section7-image1{
     padding: 70px;
     flex-shrink: 70%;
+    animation: animate 1.5s  ;
 }
 
+@keyframes animate {
+    0%{
+        transform: translate(90rem);
+        opacity: 0;
+    }
+    50%{
+    
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0rem);
+    }
+}
+@keyframes animate-r {
+    0%{
+        transform: translateX(-90rem);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+   100%{
+        opacity: 1;
+        transform: translate(0rem);
+    }
+}
 /* -------------------------------------------------------------------- */
 
 /* <!-- -------------------------------section 08----------------------    --> */
@@ -357,6 +401,7 @@ justify-content: center;
     /* -ms-flex-pack: distribute; */
     justify-content: space-around;
     color: #0065c3;
+    overflow: hidden;
     /* align-items: center; */
 }
 .section9-text{
@@ -375,6 +420,14 @@ justify-content: center;
     width: 240px;
     height: 240px;
     object-fit: cover;
+    transition: 200ms linear ;
+
+}
+.section9-image:hover{
+    transform: rotate(5deg);
+    filter: brightness(0.75);
+    /* transform: skew(10deg); */
+    /* overflow: hidden; */
 }
 /* .section9-images div i{
     color: #ffffff;position:absolute;left: 8px;bottom:30px;
@@ -408,3 +461,12 @@ footer a{
     text-decoration: none;
     color: white;
 }
+.fa-brands:hover,.footer-links a:hover{
+    color: #80bbe065 !important;
+}
+/* i:hover{
+    background-color: rgba(196, 35, 35, 0.76);
+} */
+/* .footer-social-links i:hover{
+    color: #c31d00;
+} */
